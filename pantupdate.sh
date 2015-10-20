@@ -11,7 +11,9 @@ fi
 
 echo "Download new packages"
 
-pacman -Sw gala-bzr pantheon-session-bzr slingshot-launcher-bzr wingpanel-indicator-notifications-bzr wingpanel-indicator-datetime-bzr wingpanel-indicator-network-bzr wingpanel-indicator-power-bzr wingpanel-indicator-session-bzr wingpanel-indicator-sound-bzr wingpanel-indicator-launcher-bzr wingpanel-bzr
+pacman -Syu --noconfirm
+
+pacman -Sw gala-bzr pantheon-session-bzr slingshot-launcher-bzr wingpanel-indicator-notifications-bzr wingpanel-indicator-datetime-bzr wingpanel-indicator-network-bzr wingpanel-indicator-power-bzr wingpanel-indicator-session-bzr wingpanel-indicator-sound-bzr wingpanel-indicator-launcher-bzr wingpanel-bzr mutter
 
 echo "Packages downloaded"
 
@@ -23,7 +25,7 @@ pacman -R -d --nodeps --noconfirm  mutter-pantheon-manjaro gala-bzr-manjaro pant
 echo "Install new packages"
 
 #Install new packages
-pacman -U gala-bzr pantheon-session-bzr slingshot-launcher-bzr wingpanel-indicator-notifications-bzr wingpanel-indicator-datetime-bzr wingpanel-indicator-network-bzr wingpanel-indicator-power-bzr wingpanel-indicator-session-bzr wingpanel-indicator-sound-bzr wingpanel-indicator-launcher-bzr wingpanel-bzr
+pacman -S gala-bzr pantheon-session-bzr slingshot-launcher-bzr wingpanel-indicator-notifications-bzr wingpanel-indicator-datetime-bzr wingpanel-indicator-network-bzr wingpanel-indicator-power-bzr wingpanel-indicator-session-bzr wingpanel-indicator-sound-bzr wingpanel-indicator-launcher-bzr wingpanel-bzr
 
 #Copy xml schemas for workaround on wingpanel and activate it
 
